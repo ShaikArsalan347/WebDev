@@ -1,7 +1,10 @@
-/* combine- Descendant selector */ 
-.container p{
-    color:blue;
+.icon{
+    color: red;
+    font-size: 40px;
 }
-.container h1{
-color: blueviolet;
+#tittle{
+    color: blue;
+}
+.container p{
+    color: gray;
 }
