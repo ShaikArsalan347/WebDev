@@ -1,9 +1,21 @@
-.green{
-    color: green;
-    background-color: rgb(123, 169, 138);
+/* INHERITANCE OF CSS */
+/* CHILDREN INHERIT STYLE FROM THE PARENT ,UNLESS HAVE THERE OWN STYLE */
+
+
+
+body{
+    color:blueviolet;
+    background-color: antiquewhite;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
-.red{
-    color: red;
-    background-color: aqua;
-    
+div{
+    color: black;
+font-size: 30px;
+    background-color: brown;
+}
+.green {
+    color: green;
+   
+    background-color: azure;
 }
