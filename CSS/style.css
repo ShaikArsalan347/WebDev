@@ -1,21 +1,11 @@
-/* INHERITANCE OF CSS */
-/* CHILDREN INHERIT STYLE FROM THE PARENT ,UNLESS HAVE THERE OWN STYLE */
+/* LAST RULE AND SPECIFICITY * UNIVERSAL SELECTOR */
 
-
-
-body{
-    color:blueviolet;
-    background-color: antiquewhite;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+p{
+    color:red
 }
-div{
-    color: black;
-font-size: 30px;
-    background-color: brown;
-}
-.green {
-    color: green;
-   
-    background-color: azure;
+/* more code here
+
+*/
+*{
+    color: aqua;
 }
