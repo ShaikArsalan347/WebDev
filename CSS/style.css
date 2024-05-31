@@ -1,11 +1,7 @@
-/* LAST RULE AND SPECIFICITY * UNIVERSAL SELECTOR */
-
-p{
-    color:red
+/* combine- Descendant selector */ 
+.container p{
+    color:blue;
 }
-/* more code here
-
-*/
-*{
-    color: aqua;
+.container h1{
+color: blueviolet;
 }
