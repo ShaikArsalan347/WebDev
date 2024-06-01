@@ -1,11 +1,13 @@
-/* PIXELS-absolute values, one dot on the screen
-FONT-SIZE - size of the font
-WIDTH - width of an enment 
-HIGHT -  hight of an element */
-h1{
-    font-size:60px ;
-    background-color: blue;
-    color: white;
-    width:1250px;
-    height:500px ;
+/*% -PERCENT. RELATIVE UNIT/VALUE. depends on the parent */
+
+.outer{
+    width:500px;
+    height:400px;
+    background:green ;
+    
+}
+.inner{
+    width:50%;
+    height:50%;
+    background:red ;
 }
