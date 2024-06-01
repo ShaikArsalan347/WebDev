@@ -1,21 +1,21 @@
-
-/*rgba 0-1  */
+/* HEX VALUES #RRGGBB
+123456789  A(10) B(11) C(12) D(13) E(14) F(15)
+            10    11    12     13    14     15
+            #FF0000 -RED
+            #00FF00 */
 #first{
-   color: rgba(255,0,0,1);
-   background-color: rgba(0,0,0,0);
+   color:#ff00d068 ;
+   background-color: #000;
 }
 #second{
-    color: rgba(255,0,0,0.75);
-    background-color: rgba(0,0,0,0.25);
+    color:#ffff ;
+   background-color: #00ff00;
 }
 #third{
-    color: rgba(255,0,0,0.25);
-    background-color: rgba(0,0,0,0.75);
+    color:#0000ff ;
+    background-color: #f15025;
 }
 #four{
-    color: rgba(255,0,0,0);
-    background-color: rgba(0,0,0,1);
-}
-body{
-   
+    color:#6418c1 ;
+    background-color: #f24bff;
 }
