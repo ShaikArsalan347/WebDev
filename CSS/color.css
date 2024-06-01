@@ -1,15 +1,11 @@
-body{
-    background-color: #f1f5f9;
-}
-.container{
-    background-color: #fff;
-}
-div h3{
-    color: #645cff;
-}
-p{
-    color:#64748b
-}
-.special-container{
-background-color: rgba(0,0,0,0.9);
+/* PIXELS-absolute values, one dot on the screen
+FONT-SIZE - size of the font
+WIDTH - width of an enment 
+HIGHT -  hight of an element */
+h1{
+    font-size:60px ;
+    background-color: blue;
+    color: white;
+    width:1250px;
+    height:500px ;
 }
