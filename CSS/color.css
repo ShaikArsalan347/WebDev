@@ -1,4 +1,9 @@
-/*% -PERCENT. RELATIVE UNIT/VALUE. depends on the parent */
+/*
+EM - RELATIVE, depends on parent
+1em - 16px defalt broeswer style
+1em = base value (16px) *number (1) = 16px
+2em = base value (16px) *number (2) = 32px
+2em = base value (10px) *number (2) = 20px */
 
 .outer{
     width:500px;
