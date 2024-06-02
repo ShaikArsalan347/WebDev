@@ -4,15 +4,12 @@ EM - RELATIVE, depends on parent
 1em = base value (16px) *number (1) = 16px
 2em = base value (16px) *number (2) = 32px
 2em = base value (10px) *number (2) = 20px */
-
-.outer{
-    width:500px;
-    height:400px;
-    background:green ;
-    
+div {
+  font-size: 10px;
 }
-.inner{
-    width:50%;
-    height:50%;
-    background:red ;
+.absolute {
+  font-size: 32px;
+}
+.relative {
+  font-size: 12em;
 }
