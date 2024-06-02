@@ -1,15 +1,17 @@
 /*
-EM - RELATIVE, depends on parent
-1em - 16px defalt broeswer style
-1em = base value (16px) *number (1) = 16px
-2em = base value (16px) *number (2) = 32px
-2em = base value (10px) *number (2) = 20px */
+REM - RELATIVE, depends on parent
+1rem = base value (16px) *number (1) 
+*/
+html {
+  font-size: 16px;
+}
+
 div {
-  font-size: 10px;
+  font-size: 5px;
 }
 .absolute {
   font-size: 32px;
 }
 .relative {
-  font-size: 12em;
+  font-size: 2rem;
 }
