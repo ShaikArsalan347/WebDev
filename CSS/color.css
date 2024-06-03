@@ -1,19 +1,7 @@
 /*
-VIEWPORT UNITS
-vh - hight - percent of the screen 
-vw - width - percent of screen
+default browser style and goolgle chrome devtools
 */
-* {
-  margin: 0;
-  padding: 0;
-}
-.hero {
-  background: green;
-  height: 100vh;
-  width: 100vw;
-}
-.about {
-  background: red;
-  height: 50vh;
-  width: 30vw;
+h2{
+    color: red;
+    font-size: 60px;
 }
