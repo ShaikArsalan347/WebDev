@@ -1,7 +1,18 @@
 /*
-default browser style and goolgle chrome devtools
+calc()
+performmath opration + - *
+mix and match values
 */
-h2{
-    color: red;
-    font-size: 60px;
+*{
+    margin: 0;
+}
+.navbar{
+    background:blue ;
+    color: white;
+    height: 100px;
+    font-size: 3rem;
+}
+.banner{
+    background: red;
+    height:calc(100vh -100px);
 }
