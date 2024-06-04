@@ -1,26 +1,24 @@
-/*
-height:auto;main-height;overflow
-*/
 *{
     margin: 0;
 }
-.navbar{
-    background:blue ;
-    color: white;
+#navbar{
     height: 100px;
-    font-size: 3rem;
+    background-color:whitesmoke ;
 }
-.banner{
-    background: red;
-    /* height:calc(100vh - 100px); */
-    min-height:calc(100vh - 100px) ;
-    max-height:90vh;
-    overflow: scroll;
+.logo{
+    font-size:20px ;
+    color: red;
 }
-.example{
-   background: green;
-   width: 20rem;
-   height: 25rem; 
-   overflow: hidden;
-   overflow: scroll;
+.hero{
+    color: white;
+    background-color: black;
+    min-height: calc(100vh - 100px);
+}
+span{
+    color: red;
+    font-size: 20px;
+}
+.hero-btn{
+    color: white;
+    background-color: red;
 }
