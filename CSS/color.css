@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* system fonts - a font that's already installed on the device of the user.
+- fast load times
+- less headaches
+- project will look diferent 
 
+"-apple-system, blinkmacsystemfont - system of font on apple devices
 
-/* font-size - size of the font
-font - family - describes the font of the element
-sarif, snans-serif, cursive, fantasy, monospace
+"segoe ui - used on windows systems
+"roboto - system font for android devices
  */
 body{
-    font-family: "Roboto", sans-serif; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1{
-    font-family: "Permanent Marker", cursive;
+
 }
