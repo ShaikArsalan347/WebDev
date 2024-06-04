@@ -1,24 +1,9 @@
-*{
-    margin: 0;
+/* font-size - size of the font
+font - family - describes the font of the element */
+body{
+    font-family: helvetica;
 }
-#navbar{
-    height: 100px;
-    background-color:whitesmoke ;
-}
-.logo{
-    font-size:20px ;
-    color: red;
-}
-.hero{
-    color: white;
-    background-color: black;
-    min-height: calc(100vh - 100px);
-}
-span{
-    color: red;
-    font-size: 20px;
-}
-.hero-btn{
-    color: white;
-    background-color: red;
+h1{
+    font-family: Verdana;
+    font-size: 50px;
 }
