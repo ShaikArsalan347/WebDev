@@ -1,7 +1,5 @@
 /*
-calc()
-performmath opration + - *
-mix and match values
+height:auto;main-height;overflow
 */
 *{
     margin: 0;
@@ -14,5 +12,15 @@ mix and match values
 }
 .banner{
     background: red;
-    height:calc(100vh -100px);
+    /* height:calc(100vh - 100px); */
+    min-height:calc(100vh - 100px) ;
+    max-height:90vh;
+    overflow: scroll;
+}
+.example{
+   background: green;
+   width: 20rem;
+   height: 25rem; 
+   overflow: hidden;
+   overflow: scroll;
 }
