@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&family=WindSong:wght@400;500&display=swap');
-
-body{
-    font-family: "WindSong", cursive;
+/* 
+CSS BOX MODEL */
+h1,p{
+    color: white;
 }
-h1,h2{
-    font-family: "Trade Winds", system-ui;
+h1{
+    background: red;
+    padding-top: 40px ;
+    padding-right: 20px ;
+    padding-bottom: 30px ;
+    padding-left: 50px ;
+
+}
+p{
+    background: blue;
+    /* padding: 20px; */
+    /* padding:30px  60px; */
+    padding: 5px 10px 20px 30px;
 }
