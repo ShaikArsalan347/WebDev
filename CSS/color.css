@@ -1,25 +1,20 @@
 /* 
-CSS BOX MODEL padding margin border */
-*{
-    margin: 0f;
-}
-h1,p{
+border -radius negative margin */
+ h1,p{
     color: white;
-}
-h1{
+
+ }
+ h1{
     background: red;
-   margin: 32px;
-   /* border-style: solid;
-border-width: 10px;
-border-color: black */
-border-bottom: 0.5rem dotted black;
-}
-p{
-    background: blue;
-    border: 1rem dashed gold;
-    margin: 40px 60px;
-    margin: 5px 10px 30px 60px;
-    /* padding: 20px; */
-    /* padding:30px  60px; */
-    padding: 5px 10px 20px 40px;
-}
+    padding: 10px;
+    border: 15px solid black;
+border-radius: 30px;
+/* margin-top: 50px; */
+ }
+ p{
+     background: blue;
+     padding: 15px;
+     border: 7px dotted green;
+     border-radius: 50%;
+     margin-top: -50px;
+ }
