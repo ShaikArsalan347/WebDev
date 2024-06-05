@@ -1,20 +1,24 @@
 /* 
-border -radius negative margin */
- h1,p{
-    color: white;
-
+outline,offset */
+ .links{
+    margin: 3rem;
  }
- h1{
-    background: red;
-    padding: 10px;
-    border: 15px solid black;
-border-radius: 30px;
-/* margin-top: 50px; */
+ a{
+    background: green;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0 20px;
  }
- p{
-     background: blue;
-     padding: 15px;
-     border: 7px dotted green;
-     border-radius: 50%;
-     margin-top: -50px;
+ #one{
+    border: 3px solid black;
+    outline: 0.2rem solid red;
+    outline-offset: -10px;
+ }
+ #two{
+    outline-width: 0.2rem;
+    outline-color:#222 ;
+    outline-style: solid;
+    outline-offset: -10px;
  }
