@@ -1,19 +1,21 @@
 /* 
-CSS BOX MODEL */
+CSS BOX MODEL padding margin border */
+*{
+    margin: 0f;
+}
 h1,p{
     color: white;
 }
 h1{
     background: red;
-    padding-top: 40px ;
-    padding-right: 20px ;
-    padding-bottom: 30px ;
-    padding-left: 50px ;
+   margin: 32px;
 
 }
 p{
     background: blue;
+    margin: 40px 60px;
+    margin: 5px 10px 30px 60px;
     /* padding: 20px; */
     /* padding:30px  60px; */
-    padding: 5px 10px 20px 30px;
+    padding: 5px 10px 20px 40px;
 }
