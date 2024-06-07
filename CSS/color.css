@@ -1,6 +1,17 @@
-/* border hack  */
-*{
-    border: 2px solid red;
-    
-}
+/* ELEMENTS HAVE IT SET BY DEFALT 
+BLOCK : Always start a new line and spans full width
+INLINE:does not start a new line and spans only content
 
+*/
+.block {
+    background: blue;
+    color: white;
+    display: block;
+    display: inline;
+}
+.inline {
+    background: red;
+    color: white;
+    display:inline ;
+    display: block;
+}
