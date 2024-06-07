@@ -1,18 +1,22 @@
-/* ELEMENTS HAVE IT SET BY DEFALT 
-BLOCK : Always start a new line and spans full width
-INLINE:does not start a new line and spans only content
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*/
-.block {
-    background: blue;
-    color: white;
-    width:300px;
-    margin: 0 auto;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.inline {
-    background: red;
-    color: white;
+
+ul li {
+    list-style-type: none;
 }
-body{
-    text-align: center;
+
+ul li a {
+    color: #f15025;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background: #222;
+    padding: 5px;
+    display: block;
 }
