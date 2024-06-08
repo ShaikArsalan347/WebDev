@@ -1,5 +1,5 @@
 div {
-    height: 300px;
+  min-height:100vh;
     color: white;
     border: 2px solid red;
 }
@@ -9,21 +9,19 @@ div {
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center;
-    background-position:20% 50%;
 }
 
 .small-img {
-    background-image: url('/images/small.jpeg');
-    background-repeat:no-repeat;
+    background: url('/images/folder-img.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
     background-position:center;
-    background-position:left;
-    background-position:right;
-    background-position:top;
-    background-position:20% 50%;
+    
 }
 
 .folder-img {
-    background: url('/images/folder-img.jpeg');
-    background-size:contain ; 
-     /* background-repeat:no-repeat;*/
+    background: url('./big.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position:center;
 }
