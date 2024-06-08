@@ -1,7 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 div {
+
   min-height:100vh;
     color: white;
     border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 .big-img {
@@ -9,6 +21,7 @@ div {
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center;
+    background-attachment: fixed;
 }
 
 .small-img {
@@ -16,6 +29,7 @@ div {
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center;
+    background-attachment: fixed;
     
 }
 
@@ -24,4 +38,5 @@ div {
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center;
+    background-attachment: fixed;
 }
