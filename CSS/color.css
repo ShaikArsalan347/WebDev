@@ -1,4 +1,4 @@
-/* 
+
 *{
     margin: 0;
     padding: 0;
@@ -14,10 +14,11 @@ div {
     align-items: center;
     font-size: 2rem;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .big-img {
-    background: url('./big.jpeg');
+    background: linear-gradient(to right,rgba(8, 85, 229, 0.3),rgba(24, 210, 223, 0.5)),url('./big.jpeg');
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center;
@@ -34,47 +35,10 @@ div {
 }
 
 .folder-img {
-    background: url('./big.jpeg');
-    background-repeat: no-repeat;
-    background-size:cover ;
-    background-position:center;
-    background-attachment: fixed;
-} */
-body {
-  background: #edf2f4;
+    background: linear-gradient(rgb(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url('./big.jpeg') center/cover no-repeat fixed;
+    
 }
+.colorzilla{
+background: linear-gradient(to bottom,  #b3dced 0%,#7adbbc 50%,#34839f 86%,#bce0ee 100%); 
 
-div {
-  width: 800px;
-  height: 250px;
-  margin: 5px;
-}
-
-.one {
-  background: linear-gradient(30deg, #059c8f, #ece5f0, #11a5db);
-}
-
-.two {
-  background: linear-gradient(30deg, rgb(245, 57, 210), rgb(102, 15, 190));
-}
-
-.three {
-  background: linear-gradient(25deg, orange, white, green);
-  height: 400px;
-}
-
-.four {
-  background: linear-gradient(
-    50deg,
-    rgba(231, 78, 104, 0.866),
-    rgb(9, 114, 190)
-  );
-}
-
-.five {
-  background: linear-gradient(rgb(182, 6, 36) 20%, blue);
-}
-
-.six {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0.9));
 }
