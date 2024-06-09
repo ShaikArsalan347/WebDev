@@ -1,25 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 div{
-    height: 200px;
-    width:50% ;
-    float: right;
+    border: 2px solid red;
+    background: yellow;
+    margin-top: 40px;
+
+
 }
 .one{
-    background: red;
+    background: blue;
+    color: white;
+    position:relative ;
+
 }
 .two{
-    background: blue;
-}
-.three{
     background: green;
+    color: white;
 }
-.four{
-    background: yellow;
-}
-h1{
-    clear: both;
+.special{
+background: pink;
+font-size: 20px;
+color: #222;
 }
