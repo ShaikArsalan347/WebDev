@@ -1,22 +1,42 @@
-div{
+div {
     border: 2px solid red;
     background: yellow;
-    margin-top: 40px;
-
-
+    margin-top: 60px;
 }
-.one{
+
+
+.nav {
+    background: red;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: 100%;
+
+    position: sticky;
+    margin-top: 0;
+    top: 0;
+}
+
+.one {
     background: blue;
     color: white;
-    position:relative ;
+    /* position: relative; */
 
 }
-.two{
+
+.two {
     background: green;
     color: white;
 }
-.special{
-background: pink;
-font-size: 20px;
-color: #222;
+
+.special {
+    background: pink;
+    font-size: 20px;
+    color: #222;
+}
+
+.box {
+    background: green;
+    height: 900px;
+    width: 800px;
 }
