@@ -1,42 +1,51 @@
-div {
-    border: 2px solid red;
+body {
     background: yellow;
-    margin-top: 60px;
 }
 
-
-.nav {
-    background: red;
-    color: #fff;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    width: 100%;
-
-    position: sticky;
-    margin-top: 0;
-    top: 0;
-}
-
-.one {
+.banner {
     background: blue;
+}
+
+h1 {
     color: white;
-    /* position: relative; */
-
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
-.two {
-    background: green;
-    color: white;
+@media screen and (min-width:360px) {
+    body {
+        background: red;
+    }
+
+    .banner {
+        background: yellow;
+    }
+
+    h1 {
+        color: black;
+        font-size: 60px;
+        text-transform: uppercase;
+
+    }
 }
 
-.special {
-    background: pink;
-    font-size: 20px;
-    color: #222;
-}
+@media screen and (max-width:760px) {
+    body {
+        background: aqua;
+    }
 
-.box {
-    background: green;
-    height: 900px;
-    width: 800px;
+    .banner {
+        background: cadetblue;
+    }
+
+    h1 {
+        color: black;
+        font-size: 60px;
+        text-transform: uppercase;
+        padding: 30px;
+        border: 2px solid red;
+        border-radius: 20px;
+
+    }
 }
