@@ -1,15 +1,14 @@
-div:hover{
-    color: aquamarine;
+a{
+    display: block; 
+    background: ghostwhite;
+    margin: 10px;
 }
-.header:hover{
-    color: cornflowerblue;
-    border: 2px solid red;
-
-    text-transform: uppercase;
+a:link{
+color: yellow;
 }
-a:hover{
-    text-decoration: line-through;
-    color: palevioletred;
-    text-transform: uppercase;
-    border: 2px solid red;
+a:visited{
+    color: blueviolet;
+}
+a:active{
+    color: chartreuse;
 }
