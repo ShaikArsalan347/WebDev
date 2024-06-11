@@ -31,12 +31,14 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     z-index: 9;
+   
 }
 
 .hero {
     min-height: calc(100vh - 5rem);
     background: rgb(207, 63, 212);
     position: relative;
+   
 }
 
 @media screen and (min-width:768px) {
@@ -46,7 +48,7 @@ body {
                 rgba(207, 63, 212, 0.5),
                 rgba(183, 28, 175, 0.5)),
             url(/images/computer.jpeg.jpeg);
-        min-height: calc(100vh - 5rem);
+    min-height: calc(150vh - 5rem);
     }
 }
 
@@ -87,6 +89,6 @@ body {
 
 .temp {
     min-height: 100vh;
-    background: red;
+    background: #ce4aa0;
 
 }
