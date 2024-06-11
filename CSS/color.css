@@ -1,13 +1,6 @@
-.header h1{
-color: green;
+p::first-line{
+    font-weight: bold;
 }
-
-.header > h1{
-    color: purple;
-}
-div h1{
-    color: red;
-}
-div > h1{
-    color: blue;
+p::first-letter{
+    font-size: 250%;
 }
