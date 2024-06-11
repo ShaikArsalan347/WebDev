@@ -11,3 +11,6 @@
     text-transform: capitalize;
     color:wheat ;
 }
+p{
+    letter-spacing: 5px;
+}
