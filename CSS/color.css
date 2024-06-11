@@ -1,6 +1,15 @@
-p::first-line{
-    font-weight: bold;
+div:hover{
+    color: aquamarine;
 }
-p::first-letter{
-    font-size: 250%;
+.header:hover{
+    color: cornflowerblue;
+    border: 2px solid red;
+
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: line-through;
+    color: palevioletred;
+    text-transform: uppercase;
+    border: 2px solid red;
 }
