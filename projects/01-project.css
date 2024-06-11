@@ -13,6 +13,9 @@ body {
     height: 5rem;
     background: #222;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    /* z-index: 0; */
 }
 
 .nav-title {
@@ -27,15 +30,24 @@ body {
     width: 90vw;
     max-width: 1170px;
     margin: 0 auto;
+    z-index: 9;
 }
 
 .hero {
-    background:
-        linear-gradient(to right,
-            rgba(207, 63, 212, 0.5),
-            rgba(183, 28, 175, 0.5)),
-        url(/images/computer.jpeg.jpeg);
     min-height: calc(100vh - 5rem);
+    background: rgb(207, 63, 212);
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        background:
+            linear-gradient(to right,
+                rgba(207, 63, 212, 0.5),
+                rgba(183, 28, 175, 0.5)),
+            url(/images/computer.jpeg.jpeg);
+        min-height: calc(100vh - 5rem);
+    }
 }
 
 .hero-center {
@@ -44,6 +56,11 @@ body {
     margin: 0 auto;
     padding: 5rem 0;
     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-center h1 {
@@ -65,4 +82,11 @@ body {
 .hero-center p {
     margin-bottom: 2rem;
     max-width: 35em;
+    margin: 0 auto;
+}
+
+.temp {
+    min-height: 100vh;
+    background: red;
+
 }
