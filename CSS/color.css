@@ -1,11 +1,19 @@
-:root{
-    font-size: 10px;
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block
+
+}
+.one {
+    background: red;
+    transform: translatex(100%);
+}
+.two {
+    background: green;
+    transform: translatey(0%);
+}
+.three {
+    background: blue;
+    transform: translate( -100%,0%);
 }
 
-
-.absolute{
-    font-size: 24px ;
-}
-.relative{
-    font-size: 1.5rem;
-}
