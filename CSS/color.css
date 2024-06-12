@@ -1,17 +1,23 @@
 div{
     width: 150px;
     height: 150px;
-    display: inline-block
+    display: inline-block;
+
+
 }
 .one {
     background: red;
-transform: rotatez(30deg);
+transform:skewx(40deg) ;
 }
 .two {
     background: green;
-     transform: rotate(30deg);
+     transform:skewY();
 }
 .three {
     background: blue;
- transform: rotatey(30deg);
+ transform:skewX(40deg);
+}
+.four{
+    background: yellow;
+   
 }
