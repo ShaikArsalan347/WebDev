@@ -35,8 +35,8 @@ body {
 }
 
 .hero {
-    min-height: calc(100vh - 5rem);
-    background: rgb(207, 63, 212);
+    min-height: calc(150vh - 5rem);
+    background:url(/images/computer.jpeg.jpeg) ,rgb(207, 63, 212);
     position: relative;
    
 }
@@ -48,28 +48,29 @@ body {
                 rgba(207, 63, 212, 0.5),
                 rgba(183, 28, 175, 0.5)),
             url(/images/computer.jpeg.jpeg);
-    min-height: calc(150vh - 5rem);
+    min-height: calc(180vh - 5rem);
     }
 }
 
 .hero-center {
     width: 90vw;
     max-width: 1170px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 50%;
     padding: 5rem 0;
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+top: 50%;
+left: 100%;
+transform: translate(-50%,-50%);
+text-align: center;
+position: sticky;
 }
 
 .hero-center h1 {
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-bottom: 1rem;
-
 }
 
 .hero-btn {
@@ -85,6 +86,7 @@ body {
     margin-bottom: 2rem;
     max-width: 35em;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .temp {
