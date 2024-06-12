@@ -2,22 +2,20 @@ div{
     width: 150px;
     height: 150px;
     display: inline-block;
-
-
+}
+div:hover{
+    background:firebrick;
 }
 .one {
-    background: red;
-transform:skewx(40deg) ;
+    background: rgb(71, 26, 195);
+transition-property:background;
+transition-duration:10s ;
 }
 .two {
     background: green;
-     transform:skewY();
+    
 }
 .three {
     background: blue;
- transform:skewX(40deg);
-}
-.four{
-    background: yellow;
-   
+ 
 }
