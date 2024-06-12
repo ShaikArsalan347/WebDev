@@ -1,16 +1,17 @@
-*{
-    margin: 0;
-
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block
 }
-.hero{
-  min-height:100vh ;
-  position: relative;  
+.one {
+    background: red;
+   transform: scalex(3.1);
 }
-.hero-center{
-position: absolute;
-border: 2px solid red;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-text-align: center;
+.two {
+    background: green;
+    transform: scaley(1);    
+}
+.three {
+    background: blue;
+   transform: scale(2,1);
 }
