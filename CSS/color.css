@@ -1,14 +1,11 @@
-a{
-    display: block; 
-    background: ghostwhite;
-    margin: 10px;
+:root{
+    font-size: 10px;
 }
-a:link{
-color: yellow;
+
+
+.absolute{
+    font-size: 24px ;
 }
-a:visited{
-    color: blueviolet;
-}
-a:active{
-    color: chartreuse;
+.relative{
+    font-size: 1.5rem;
 }
