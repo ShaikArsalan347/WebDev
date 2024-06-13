@@ -1,35 +1,4 @@
 div {
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-}
-
-
-
-.one {
-    background: rgb(71, 26, 195);
-    transition: all 2s 1s;
-}
-
-.two {
-    background: green;
-
-}
-
-.three {
-    background: blue;
-    transition: all 2s 1s;
-}
-
-.one:hover {
-    background: paleturquoise;
-    border-radius: 50%;
-    transform: translateX(103%);
-}
-
-.three:hover {
-    background: maroon;
-    border-radius: 50%;
-    transform: scalex(1);
-    transform: translateX(-103%);
+    width: 100px;
+    height: 100px;
 }
