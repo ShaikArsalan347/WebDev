@@ -1,21 +1,28 @@
-div{
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
 }
-div:hover{
-    background:firebrick;
+
+div:hover {
+    background: firebrick;
 }
+
 .one {
     background: rgb(71, 26, 195);
-transition-property:background;
-transition-duration:10s ;
+    transition-property: background, border-radius;
+    transition-duration: 4s, 2s;
 }
+
 .two {
     background: green;
-    
+
 }
+
 .three {
     background: blue;
- 
+}
+
+.one:hover {
+    border-radius: 50%;
 }
