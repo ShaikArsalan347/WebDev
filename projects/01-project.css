@@ -80,7 +80,9 @@ position: sticky;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 2px;
+    animation:slidfrombottom 5s ease-in-out 1 ;
 }
+
 
 .hero-center p {
     margin-bottom: 2rem;
@@ -88,9 +90,30 @@ position: sticky;
     margin: 0 auto;
     margin-bottom: 30px;
 }
-
+.hero-text{
+    animation:slidfromtop 5s ease-in-out 1 ;
+}
 .temp {
     min-height: 100vh;
     background: #ce4aa0;
 
 }
+/* animation */
+@keyframes slidfromtop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);}
+     100%{
+       opacity: 1;
+       transform: translateY(0);
+        }
+    }
+    @keyframes slidfrombottom{
+        0%{
+            opacity: 1;
+            transform: translatex(100px);}
+         100%{
+           opacity: 0;
+           transform: translateY(0);
+            }
+        }
