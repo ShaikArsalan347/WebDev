@@ -1,36 +1,34 @@
 div{
     width: 200px;
     height:100px ;
+    color: aliceblue;
+    margin: 10px;
+    opacity: 0;
 }
-.transition{
-    background: palevioletred;
-   transition: all 2s linear;
-}
-.transition:hover{
-    background:yellowgreen ;
-    transform: translateX(100px);
-}
+
+
 .animation{
 background: olive;
-/* animation-name: move;
-animation-duration: 10s;
-animation-iteration-count: 5; */
-animation: move 10s infinite;
+animation: move 5s 2;
+animation-fill-mode:forwards ;
 }
 @keyframes move{
     0%{
-transform: translatex(10px);
+opacity: 0.1;
+    }
+    20%{
+transform: translateX(200px);
+opacity: 0.25;
     }
     50%{
-transform: translatex(100px);
-background: red;
+transform: translateX(-100px);
+opacity: 0.5;
     }
     75%{
-transform: translateX(-200px);
-background:black ;
+opacity: 0.75;
     }
     100%{
-transform: translateX(20px);
-background: hotpink;
+        transform: translateX(20px);
+        opacity: 1;
     }
 }
