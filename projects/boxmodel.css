@@ -77,7 +77,7 @@ h3{
 @keyframes fromright{
     0%{
         opacity: 0;
-        transform: translateX(300px);
+        transform: translateX(200px);
     }
     50%{
         opacity: 0.25;
@@ -96,7 +96,7 @@ h3{
 @keyframes fromleft{
     0%{
         opacity: 0;
-        transform: translateX(-300px);
+        transform: translateX(-200px);
     }
     50%{
         opacity: 0.25;
