@@ -19,9 +19,11 @@ body{
 }
 .card-1{
     border: 2px solid  #ff69a6;
+    animation: fromright 8s 1;
 }
 .card-2{
     border: 2px solid #68a3ff;
+    animation: fromleft 8s 1;
 }
 .icon{
     width: 40px;
@@ -33,6 +35,7 @@ body{
 }
 .card-1 .icon{
     background-color: #ff69a6;
+    
 }
 .card-2 .icon{
 background-color: #68a3ff;
@@ -70,4 +73,42 @@ h3{
     color: #68a3ff;
     outline:0.5px solid black ;
 }
-
+/* animation */
+@keyframes fromright{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    50%{
+        opacity: 0.25;
+        transform: translateX(20px);
+    }
+    
+    75%{
+        opacity: 0.75;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fromleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    50%{
+        opacity: 0.25;
+        transform: translateX(20px);
+    }
+    
+    75%{
+        opacity: 0.75;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
