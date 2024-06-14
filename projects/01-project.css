@@ -110,10 +110,10 @@ position: sticky;
     }
     @keyframes slidfrombottom{
         0%{
-            opacity: 1;
+            opacity: 0;
             transform: translatex(100px);}
          100%{
-           opacity: 0;
+           opacity: 1;
            transform: translateY(0);
             }
         }
