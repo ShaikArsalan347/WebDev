@@ -1,15 +1,10 @@
-h1{
-    text-shadow:2px 4px 1px red  ;
+.navbar{
+    background: red;
+    font-size: 2rem;
+    box-shadow: 2px 5px 3px ;
+    
 }
-.box{
-    width: 200px;
-    height: 200px;
+.nav{
     background: blue;
-    margin: 20px;
-    box-shadow:8px 6px 5px #03c7ee ;
-}
-.box{
-    -webkit-box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
--moz-box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
-box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
+    font-size: 2rem;
 }
