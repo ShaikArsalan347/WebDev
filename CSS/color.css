@@ -1,34 +1,52 @@
-div{
-    width: 200px;
-    height:100px ;
-    color: aliceblue;
-    margin: 10px;
-    opacity: 0;
+:root {
+    --primarycolor:#fff;
+    --secondary:#b2132d;
+   --font-size: 20px;
+   --font-style: italic;
+   --p-font-size:10px;
+   --transition: all 2s ease-in-out;
 }
-
-
-.animation{
-background: olive;
-animation: move 5s 2;
-animation-fill-mode:forwards ;
+h1{
+    color: var(--secondary);
+    font-size: var(--font-size);
+    font-style:var(--font-style);
 }
-@keyframes move{
-    0%{
-opacity: 0.1;
-    }
-    20%{
-transform: translateX(200px);
-opacity: 0.25;
-    }
-    50%{
-transform: translateX(-100px);
-opacity: 0.5;
-    }
-    75%{
-opacity: 0.75;
-    }
-    100%{
-        transform: translateX(20px);
-        opacity: 1;
-    }
+h2{
+    color: var(--primaryred);
+    font-size: var(--font-size);
+    font-style:var(--font-style);
+    transition: var(--transition);  
+}
+h3{
+    color: var(--secondary);
+    font-size: var(--font-size);
+    font-style:var(--font-style);
+}
+.main{
+    --primaryred:red;
+}
+.main-text{
+    color: var(--primaryred);
+}
+.sec{
+    width: 100%;
+    height: 70%;
+    background-color: beige;
+}
+.icons{
+    background: #2786c2c6;
+    height: 30px;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+}
+.fa-a{
+    color: #b2132d;
+   
+}
+.fa-s{
+color: chocolate;
+}
+.size{
+    font-size: 30px;
 }
