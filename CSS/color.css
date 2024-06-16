@@ -1,52 +1,10 @@
-:root {
-    --primarycolor:#fff;
-    --secondary:#b2132d;
-   --font-size: 20px;
-   --font-style: italic;
-   --p-font-size:10px;
-   --transition: all 2s ease-in-out;
-}
 h1{
-    color: var(--secondary);
-    font-size: var(--font-size);
-    font-style:var(--font-style);
+    text-shadow:2px 4px 1px red  ;
 }
-h2{
-    color: var(--primaryred);
-    font-size: var(--font-size);
-    font-style:var(--font-style);
-    transition: var(--transition);  
-}
-h3{
-    color: var(--secondary);
-    font-size: var(--font-size);
-    font-style:var(--font-style);
-}
-.main{
-    --primaryred:red;
-}
-.main-text{
-    color: var(--primaryred);
-}
-.sec{
-    width: 100%;
-    height: 70%;
-    background-color: beige;
-}
-.icons{
-    background: #2786c2c6;
-    height: 30px;
-    display: flex;
-   align-items: center;
-    justify-content: center;
-}
-.fa-a{
-    color: #b2132d;
-   
-}
-.fa-s{
-color: chocolate;
-}
-.size{
-    font-size: 30px;
+.box{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: 20px;
+    box-shadow:8px 6px 5px #03c7ee ;
 }
