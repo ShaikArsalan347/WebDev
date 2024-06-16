@@ -8,3 +8,8 @@ h1{
     margin: 20px;
     box-shadow:8px 6px 5px #03c7ee ;
 }
+.box{
+    -webkit-box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
+-moz-box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
+box-shadow: 31px 25px 5px 0px rgba(51,80,140,1);
+}
