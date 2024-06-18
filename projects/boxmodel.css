@@ -58,6 +58,7 @@ h3{
     text-transform: capitalize;
     border:  transparent;
     border-radius: 0.5rem;
+    cursor: pointer;
     padding: 0.5rem 1rem;
     letter-spacing: 2px;
     font-family: "Trade Winds", system-ui;
