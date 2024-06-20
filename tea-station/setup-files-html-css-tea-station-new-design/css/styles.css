@@ -98,8 +98,32 @@ p{
     color: var(--clr-primary);
     background: var(--clr-primary-light);
 }
-
+.clearfix::after {
+    content:'' ;
+    clear: both;
+    display:table;
+}
+.section-title h3{
+font-family: var(--ff-secondary);
+color: var(--clr-primary);
+}
+.section-title{
+    margin-bottom: 2rem;
+}
+.section-center{
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and (min-width:992px){
+    .section-center{
+        width:95vw ;
+        padding: 4rem 1rem;
+    }
+}
     /* ====== header ====== */
+
 .header{
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../tea-station-images/main-bcg.jpeg") center/cover no-repeat fixed;
@@ -130,9 +154,61 @@ p{
     outline-offset:0.25rem;
     padding: 1rem 1.75rem;
 }
+
 /* content-divider */
+
 .content-divider{
     height: 0.5rem;
     background:linear-gradient(to left,var(--clr-primary),#e9b949,var(--clr-primary)); 
 }
+
 /* ======skills====== */
+
+.skills {
+background: var(--clr-grey-10);
+    
+    }
+.skill{
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+.skill-icon{
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    display: inline-block;
+    color: var(--clr-primary);
+}
+.skill-text{
+    color: var(--clr-grey-5);
+    max-width: 17rem;
+    margin: 0 auto;
+}
+.skill:hover {
+    background: var(--clr-white);
+    border-bottom: 2px solid var(--clr-primary); 
+}
+.skill:hover .skill-icon{
+    transform: translateY(-5px);
+}
+@media screen and (min-width:576px){
+    .skill{
+        float: left;
+        width: 50%;
+        border-radius: 10% 10% 20% 20%;
+    }
+}
+@media screen and (min-width:1200px){
+    .skill{
+
+        width: 25%;
+        border-radius: 10% 10% 20% 20%;
+    }
+}
+
+
+/* ===== about ===== */
+
+
