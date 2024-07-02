@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: normal;
+}
+
+body {
+    background: #d3e3fd;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav {
+    margin-top: 2rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 5px;
+    background: #ffffff;
+}
+
+.nav-icons {
+    display: inline-block;
+    padding: 1.25rem;
+    /* padding-top: 30px; */
+}
+
+.space {
+    padding-left: 1rem;
+}
+
+.nav-search {
+    display: inline-block;
+}
+
+.google-img {
+    border-radius: 0.5rem;
+}
+
+.search-bar {
+    background: #eceff7;
+    border: 2px solid transparent;
+    width: 60rem;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 1.25rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.search-bar i {
+    padding-right: 5px;
+}
+
+.profile p {
+    display: inline-flex;
+    margin-left: 0.25rem;
+    background: #78909c;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    height: 25px;
+    width: 25px;
+    padding-bottom: 2px;
+
+}
+
+.extensions {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.three-dots {
+    margin-left: 1.5rem;
+}
+
+.search-bar p {
+    display: inline-block;
+    text-transform: capitalize;
+    opacity: 0.65;
+}
+
+p {
+    display: inline;
+}
+
+.extensions {
+    border-right: 2px solid #d3e3fd;
+    border-radius: 2px;
+    padding-right: 7px;
+}
+
+.search-control {
+    display: inline-block;
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    text-transform: capitalize;
+    outline: none;
+    background: #eceff7;
+}
+
+.main-page {
+    height: 90vh;
+    background: #ffff;
+}
+
+.lab {
+    display: flex;
+    justify-content: end;
+}
+
+.lab .flask {
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+
+}
+
+.lab a {
+    padding-top: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #160000;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.apps {
+    padding: 10px;
+    padding-top: 23px;
+    font-weight: 500;
+    padding-right: 30px;
+    cursor: pointer;
+
+}
+
+.profile-2 p {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    font-size: 20px;
+    padding-bottom: 3px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.google-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.google-hero img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 92px;
+}
+
+.search-bar-2 {
+    margin: 1.5rem auto;
+    width: 415px;
+    height: 42px;
+}
