@@ -1,33 +1,45 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #f3f3f3;
 }
-.container{
+
+.container {
     border: 5px solid red;
 }
+
 .box {
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: #f3f3f3;
 }
-.box-1{
+
+.box-1 {
     background: #d51414;
     /* font-size: 50px; */
-    
+
 }
-.box-2{
+
+.box-2 {
     background: #125e28;
 }
-.box-3{
+
+.box-3 {
     background: #0d30df;
 }
-.box-4{
+
+.box-4 {
     background: #cd0bb6;
 }
-.box-5{
+
+.box-5 {
     background: #0ad2d5;
 }
-.generic{
+
+.box-6 {
+    background: darkcyan;
+}
+
+.generic {
     background: black;
 }
