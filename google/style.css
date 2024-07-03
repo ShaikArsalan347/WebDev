@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #d3e3fd;
+    /* background: #d3e3fd; */
     max-width: 1900px;
 }
 
@@ -58,6 +58,18 @@ body {
     .search-bar {
         background: #eceff7;
         border: 2px solid transparent;
+        width: 75vw;
+        height: 40px;
+        padding: 10px 10px;
+        border-radius: 1.25rem;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .search-bar {
+        background: #eceff7;
+        border: 2px solid transparent;
         width: 85vw;
         height: 40px;
         padding: 10px 10px;
@@ -65,6 +77,8 @@ body {
         display: flex;
     }
 }
+
+
 
 .search-bar i {
     padding-right: 5px;
@@ -253,7 +267,25 @@ a:hover {
     }
 }
 
-@media screen and (max-width:622px) {
+/* @media screen and (min-width:653px) {
+    input.search-control-2 {
+        display: inline-block;
+        width: 300px;
+        height: 30px;
+
+        padding: 0rem 10px 10px;
+        padding-right: 50px;
+        border: none;
+        margin-right: 23rem;
+        text-transform: capitalize;
+        outline: none;
+        background: #eceff7;
+    }
+} */
+
+
+
+@media screen and (min-width:430px) {
     input.search-control-2 {
         display: inline-block;
         width: 300px;
@@ -269,23 +301,8 @@ a:hover {
     }
 }
 
-@media screen and (max-width:668px) {
-    input.search-control-2 {
-        display: inline-block;
-        width: 300px;
-        height: 30px;
 
-        padding: 0rem 10px 10px;
-        /* padding-right: 50px; */
-        border: none;
-        /* margin-right: 23rem; */
-        text-transform: capitalize;
-        outline: none;
-        background: #eceff7;
-    }
-}
-
-@media screen and (max-width:420px) {
+@media screen and (max-width:600px) {
     .space {
         padding-left: 0;
         padding-right: 10px;
@@ -304,6 +321,20 @@ a:hover {
     .fa-regular,
     .far {
         display: inline-block;
-        margin-right: 60;
+        /* margin-right: 60px; */
+    }
+
+    input.search-control-2 {
+        display: inline-block;
+        width: 300px;
+        height: 30px;
+
+        padding: 0rem 10px 10px;
+        /* padding-right: 50px; */
+        border: none;
+        /* margin-right: 23rem; */
+        text-transform: capitalize;
+        outline: none;
+        background: #eceff7;
     }
 }
