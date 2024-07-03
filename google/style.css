@@ -45,16 +45,33 @@ body {
 .search-bar {
     background: #eceff7;
     border: 2px solid transparent;
-    width: 60rem;
+    width: 60vw;
     height: 40px;
     padding: 10px 10px;
     border-radius: 1.25rem;
     display: flex;
     /* justify-content: space-between; */
 }
-
+@media screen and (min-width:1200px) {
+    .search-bar {
+        background: #eceff7;
+        border: 2px solid transparent;
+        width: 75vw;
+        height: 40px;
+        padding: 10px 10px;
+        border-radius: 1.25rem;
+        display: flex;
+    }
+}
 .search-bar i {
     padding-right: 5px;
+}
+@media screen and (min-width:1200px){
+    .search-bar i {
+        padding-right: 5px;
+        display: inline;
+        margin: 0 0 0 20rem;
+    }
 }
 
 .profile p {
@@ -98,7 +115,7 @@ p {
 
 .search-control {
     display: inline-block;
-    width: 100%;
+    width: 100vh;
     padding: 0.65rem 1rem;
     border: none;
     margin-bottom: 1.25rem;
@@ -108,7 +125,7 @@ p {
 }
 
 .main-page {
-    height: 90vh;
+    height: 100vh;
     background: #ffff;
 }
 
@@ -174,6 +191,34 @@ a:hover {
 
 .search-bar-2 {
     margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     width: 415px;
     height: 42px;
+}
+.search-control-2   {
+    display: flex;
+    width: 100vh;
+    padding: 0.65rem 1rem;
+    border: none;
+    /* margin-bottom: 1.25rem; */
+    text-transform: capitalize;
+    outline: none;
+    background: #eceff7;
+}
+
+@media screen and (min-width:1200px){
+input.search-control-2   {
+    display: inline-block;
+    width: 100vh;
+    /* padding: 0.65rem 10px; */
+    /* padding-right: 50px; */
+    border: none;
+    /* margin-bottom: 1.25rem; */
+    margin-right:30rem;
+    text-transform: capitalize;
+    outline: none;
+    background: #eceff7;
+    }
 }
