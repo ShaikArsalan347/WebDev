@@ -18,6 +18,10 @@ body {
     display: table;
 }
 
+.navbar {
+    width: 100%;
+}
+
 .nav {
     margin-top: 2rem;
     border-top-right-radius: 0.5rem;
@@ -28,8 +32,9 @@ body {
 
 .nav-icons {
     display: inline-block;
-    padding: 1.25rem;
+    padding: 10px;
     /* padding-top: 30px; */
+    margin-bottom: 1rem;
 }
 
 .space {
@@ -40,101 +45,44 @@ body {
     display: inline-block;
 }
 
-.google-img {
-    border-radius: 0.5rem;
-}
 
 .search-bar {
-    background: #eceff7;
-    border: 2px solid transparent;
-    width: 65vw;
-    height: 40px;
-    padding: 10px 10px;
-    border-radius: 1.25rem;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    background: #eceff7;
+    height: 50px;
+    /* width: px; */
+    border-radius: 30px;
+    padding: 20px;
 }
 
-
-
-@media screen and (min-width:1200px) {
-    .search-bar {
-        background: #eceff7;
-        border: 2px solid transparent;
-        width: 75vw;
-        height: 40px;
-        padding: 10px 10px;
-        border-radius: 1.25rem;
-        display: flex;
-    }
+.search-control {
+    min-width: 70vw;
+    width: 55vw;
+    padding: 0.65rem 1rem;
+    border: none;
+    /* margin-bottom: 1.25rem; */
+    text-transform: capitalize;
+    outline: none;
+    background: #eceff7;
+    /* border-radius: 30px; */
+    height: 20px;
 }
 
-@media screen and (max-width:390px) {
-    input.search-bar {
-        background: #eceff7;
-        border: 2px solid transparent;
-        width: 55vw;
-        height: 40px;
-        padding: 10px 10px;
-        border-radius: 1.25rem;
-        display: flex;
-    }
+@media screen and (max-width:1200px) {
+    .search-control {
+        max-width: 90vw;
 
-    .fa-star {
-        display: none;
-    }
-
-    .nav-icons {
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width:1800px) {
-    .search-bar {
-        background: #eceff7;
-        border: 2px solid transparent;
-        width: 85vw;
-        height: 40px;
-        padding: 10px 10px;
-        border-radius: 1.25rem;
-        display: flex;
     }
 }
 
 
 
-.search-bar i {
-    padding-right: 5px;
-}
 
 .nav-star:hover {
     cursor: pointer;
     color: goldenrod;
-}
-
-@media screen and (min-width:1200px) {
-    .search-bar i {
-        padding-right: 5px;
-        display: inline;
-        margin: 0 0 0 20rem;
-    }
-
-}
-
-@media screen and (min-width:1700px) {
-    .search-bar-1 i {
-        /* padding-right: 5px; */
-        display: inline;
-        margin: 0 0 0 40rem;
-    }
-
-    .search-bar-1 {
-        position: relative;
-    }
-
-    input.search-control-1 {
-        position: absolute;
-    }
 }
 
 .profile p {
@@ -177,16 +125,6 @@ p {
     cursor: pointer;
 }
 
-.search-control {
-    display: inline-block;
-    width: 100vh;
-    padding: 0.65rem 1rem;
-    border: none;
-    margin-bottom: 1.25rem;
-    text-transform: capitalize;
-    outline: none;
-    background: #eceff7;
-}
 
 .main-page {
     background: #ffff;
@@ -254,35 +192,42 @@ a:hover {
 }
 
 .search-bar-2 {
-    background: #eceff7;
+    background: #ffffff;
     margin: 2rem auto;
-    width: 3900px;
-    max-width: 320px;
+    width: 390px;
+    max-width: 400px;
     position: relative;
     height: 30px;
     border-radius: 20px;
     padding-top: 0.75rem;
     padding-bottom: 1.75rem;
-    padding-left: 1rem;
-    padding-right: 5rem;
+    padding-left: 1.75rem;
+    padding-right: 2rem;
+    box-shadow: 1px 0.5px 1px black;
+    display: flex;
+    justify-content: space-between;
 }
 
 input.search-control-2 {
-    width: 280px;
+    width: 220px;
     max-width: 350px;
     border: none;
     text-transform: capitalize;
     outline: none;
-    background: #eceff7;
+    background: #ffffff;
     position: absolute;
+    margin-left: 25px;
+}
 
+.seach-microphone {
+    cursor: pointer;
+    color: #000;
 }
 
 @media screen and (max-width:600px) {
     .space {
-        padding-left: 0;
+        padding-left: 10px;
         padding-right: 10px;
-        /* margin-right: 0.25; */
     }
 
     .extensions {
@@ -297,10 +242,13 @@ input.search-control-2 {
     .fa-regular,
     .far {
         display: inline-block;
-        /* margin-right: 60px; */
     }
+}
 
-
+@media screen and (max-width:320px) {
+    .space {
+        padding: 0;
+    }
 }
 
 .web-icons {
@@ -331,12 +279,21 @@ input.search-control-2 {
 }
 
 .web-names {
-    padding-right: 10rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: center;
+    font-size: 16px;
+    /* font-weight: ; */
 }
 
 .youtube {
-    margin-left: 1rem;
-    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    margin-right: 1rem;
+}
+
+.google-img {
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 8px;
 }
