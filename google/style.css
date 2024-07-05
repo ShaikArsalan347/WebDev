@@ -32,7 +32,7 @@ body {
 
 .nav-icons {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 0;
     /* padding-top: 30px; */
     margin-bottom: 1rem;
 }
@@ -43,6 +43,7 @@ body {
 
 .nav-search {
     display: inline-block;
+    flex-wrap: nowrap;
 }
 
 
@@ -55,12 +56,15 @@ body {
     /* width: px; */
     border-radius: 30px;
     padding: 20px;
+    /* flex-grow: ; */
+    flex-wrap: nowrap;
 }
 
 .search-control {
+    display: flex;
     min-width: 70vw;
     width: 55vw;
-    padding: 0.65rem 1rem;
+    padding: 0.65rem 0rem;
     border: none;
     /* margin-bottom: 1.25rem; */
     text-transform: capitalize;
@@ -68,6 +72,8 @@ body {
     background: #eceff7;
     /* border-radius: 30px; */
     height: 20px;
+
+
 }
 
 @media screen and (max-width:1200px) {
