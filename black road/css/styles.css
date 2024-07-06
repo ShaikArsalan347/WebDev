@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
 
 /*
 =============== 
@@ -22,7 +23,7 @@ Variables
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
+  --clr-primary-8: #88ebf2;
   --clr-primary-9: hsl(185, 94%, 87%);
   --clr-primary-10: hsl(186, 100%, 94%);
   /* darkest grey - used for headings */
@@ -36,7 +37,7 @@ Variables
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-10: #fffcfc;
   --clr-white: #fff;
   --ff-primary: "Lato", sans-serif;
   --transition: all 0.3s linear;
@@ -312,6 +313,8 @@ Services
 */
 .services {
   background: var(--clr-grey-10);
+  border: 2px solid rgba(239, 239, 239, 0.88);
+
 }
 
 .service {
@@ -380,13 +383,15 @@ Featured Tours
 */
 .tour-card {
   transition: var(--transition);
-  background: var(--clr-grey-10);
-  box-shadow: var(--light-shadow);
+  /* background: var(--clr-grey-10); */
+  /* box-shadow: var(--light-shadow); */
   margin-bottom: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(239, 239, 239, 0.88);
 }
 
 .tour-card:hover {
-  box-shadow: var(--dark-shadow);
+  /* box-shadow: var(--dark-shadow); */
   transform: scale(1.02);
 }
 
@@ -467,14 +472,137 @@ Featured Tours
 
 /*
 =============== 
-Deals
+contacts
 ===============
 */
+.contact {
+  background: #c4f5f9;
+}
+
+.contact-title {
+  color: #4d4d4d;
+  font-family: "Baskervville SC", serif;
+}
+
+.contact-title p {
+  /* color: ; */
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contact-form {
+  display: flex;
+  max-width: 28rem;
+}
+
+.form-control {
+  flex: 1 1 auto;
+  color: var(--clr-grey-5);
+}
+
+.form-control,
+.btn-submit {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 1;
+  background: #e7fbfc;
+  text-transform: capitalize;
+  border: transparent;
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: inherit;
+}
+
+.btn-submit {
+  border: 1px solid #c5b7b7;
+  cursor: pointer;
+  font-family: "Baskervville SC", serif;
+  margin-left: 0.5rem;
+  background: #88ebf2;
+  transition: var(--transition);
+}
+
+.btn-submit:hover {
+  background: var(--clr-primary-3);
+  color: #fff;
+}
+
+@media screen and (min-width:992px) {
+  .contact-center {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .contact-title h3 {
+    line-height: 1.5;
+  }
+}
+
 /*
 =============== 
 Gallery
 ===============
 */
+.gallery-img-container {
+  position: relative;
+  background: var(--clr-primary-5);
+  border: 2px solid var(--clr-grey-5);
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transform: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.6;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width:768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+
+}
 
 /*
 =============== 
