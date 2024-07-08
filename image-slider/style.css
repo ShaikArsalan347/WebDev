@@ -7,14 +7,21 @@ body {
     width: 60%;
     height: 400px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 12rem;
     align-items: center;
     gap: 5px;
+    /* flex-wrap: wrap; */
 }
 
-/* 
-.container h1 {
-} */
+.heading {
+    padding: 0.25rem 2rem;
+    margin-left: 21rem;
+    position: absolute;
+    background: rgb(235, 182, 182);
+    border-radius: 20px;
+}
 
 .container img {
     width: 10%;
