@@ -1,49 +1,43 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #f3f3f3;
+    color: #222;
 }
 
 .container {
-    border: 5px solid red;
+    border: 5px solid black;
 }
 
-.box {
-    padding: 30px 0;
-    text-align: center;
-    font-size: 35px;
-    color: #f3f3f3;
+.cell {
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid red;
+    color: #fff;
 }
 
-.box-1 {
-    background: #d51414;
-    /* font-size: 50px; */
-
+.cell-1 {
+    background: goldenrod;
 }
 
-.box-2 {
-    background: #125e28;
+.cell-2 {
+    background: #2090da;
 }
 
-.box-3 {
-    background: #0d30df;
+.cell-3 {
+    background: #20da42;
 }
 
-.box-4 {
-    background: #cd0bb6;
+.cell-4 {
+    background: #da20d1;
 }
 
-.box-5 {
-    background: #0ad2d5;
-}
-
-.box-6 {
-    background: darkcyan;
-}
-
-.generic {
-    background: black;
+.cell-5 {
+    background: #18e0da;
 }

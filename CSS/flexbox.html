@@ -4,45 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox</title>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="/CSS/flexbox.css">
+    <title>geid</title>
+    <link rel="stylesheet" href="./flexbox.css">
     <style>
         .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .box {
-            flex: 0 0 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            /* margin: 7rem; */
         }
     </style>
 </head>
 
 <body>
-    <!-- parent=flex-container -->
     <div class="container">
-        <!-- childern=flex-item -->
-        <div class="box box-1">1</div>
-        <div class="box box-2">2</div>
-        <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
-
-        <!-- <div class="box generic">G</div>
-        <div class="box generic">G</div>
-        <div class="box generic">G</div>
-        <div class="box generic">G</div>
-        <div class="box generic">G</div> -->
+        <div class="colums">
+            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
+        </div>
+        <div class="colums">
+            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
+        </div>
+        <div class="colums">
+            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
+        </div>
+        <div class="colums">
+            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
+            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
+        </div>
     </div>
-    <!-- <div class="container-1">
-        <div class="box box-1">1</div>
-        <div class="box box-2">2</div>
-        <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
-    </div> -->
-    <a href="./banner.html"> banner</a>
 </body>
 
 </html>
