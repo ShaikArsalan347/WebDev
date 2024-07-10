@@ -9,36 +9,29 @@
     <style>
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 1rem;
+            min-height: 100vh;
+            display: grid;
             /* margin: 7rem; */
+            grid-template-columns: repeat(2, 100px) 1fr;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="colums">
-            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
-        </div>
-        <div class="colums">
-            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
-        </div>
-        <div class="colums">
-            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
-        </div>
-        <div class="colums">
-            <img src="/image-slider/img-1.jpeg" alt="img-1.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-2.jpg" width="100%">
-            <img src="/image-slider/img-2.jpeg" alt="img-3.jpg" width="100%">
-        </div>
+        <div class="cell cell-1">cell 1</div>
+        <div class="cell cell-2">cell 2</div>
+        <div class="cell cell-3">cell 3</div>
+        <div class="cell cell-4">cell 4</div>
+        <div class="cell cell-5">cell 5</div>
+        <div class="cell cell-6">cell 6</div>
+        <!-- <div class="cell cell-7">cell 7</div> -->
     </div>
 </body>
 
