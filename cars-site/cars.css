@@ -6,10 +6,19 @@
 .nav{
     background: #222;
     display: flex;
+<<<<<<< HEAD
     padding: 10px;
     border-bottom: 2px solid #dfdfdf;
     /* border: 6px solid rebeccapurple; */
     width: 100%;
+=======
+    width: 100%;
+    background: #141414;
+    position: fixed;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+
+>>>>>>> c9fff96e5417da04bececab6f0f1a615cb3130d8
 }
 .nav-items-container{
     display: flex;
