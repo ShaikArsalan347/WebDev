@@ -370,7 +370,7 @@ img:hover {
 footer {
     border-top: 4px solid #e90404;
     background: #000000;
-    height: 30vh;
+    height: 100%;
 }
 
 .footer-info {
