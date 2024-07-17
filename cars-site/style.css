@@ -377,8 +377,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
     color: #fff;
+    padding-bottom: 50px;
 }
 
 .footer-icons {
