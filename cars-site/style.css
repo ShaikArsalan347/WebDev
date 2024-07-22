@@ -33,6 +33,18 @@
     .nav-links-container {
         display: none;
     }
+
+    .hero-text-container {
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        text-transform: capitalize;
+        font-size: 2rem;
+        max-width: 50vw;
+        width: 30rem;
+        /* width: 20rem; */
+    }
 }
 
 
@@ -42,6 +54,17 @@
         /* justify-content: center; */
         align-items: center;
         gap: 30px;
+    }
+
+    .hero-text-container {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        text-transform: capitalize;
+        font-size: 2rem;
+        max-width: 50vw;
+        width: 30rem;
     }
 }
 
@@ -79,16 +102,7 @@
     background: linear-gradient(rgba(27, 42, 43, 0.174), rgba(0, 0, 0, 0.7)), url("./images/hero-3.avif") center/cover no-repeat;
 }
 
-.hero-text-container {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    text-transform: capitalize;
-    font-size: 2rem;
-    max-width: 50vw;
-    width: 30rem;
-}
+
 
 .btn {
     color: #fff;
@@ -255,6 +269,7 @@ a {
     /* padding: 20px 100px; */
     margin-left: 1.25rem;
     /* margin-bottom: 20px; */
+    transition: all 1s ease-in-out;
 }
 
 h2 {
@@ -287,10 +302,10 @@ h2 {
     }
 }
 
-@media screen and (min-width:1568px) {
+@media screen and (min-width:1170px) {
     .section-3 {
         width: 90vw;
-        display: grid;
+        /* display: grid; */
         grid-template-columns: repeat(4, 1fr);
         /* justify-content: center; */
         /* margin: 0; */
@@ -322,13 +337,13 @@ h2 {
     display: grid;
 }
 
-.gallery-photo {
+/* .gallery-photo {
     opacity: 0.6;
 }
 
 img:hover {
     opacity: 1;
-}
+} */
 
 @media screen and (min-width:768px) {
     .gallery {
@@ -349,6 +364,12 @@ img:hover {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .footer-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 footer {
@@ -358,9 +379,6 @@ footer {
 }
 
 .footer-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     padding-bottom: 50px;
 }
