@@ -1,0 +1,135 @@
+/* ******************* */
+/* GENRAL COMPONENT */
+/* ******************* */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.primary-heading,
+.secondary-heading {
+  font-weight: 700;
+  color: #333;
+  color: #45260a;
+  letter-spacing: -0.5px;
+}
+
+.primary-heading {
+  line-height: 1.05;
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.tettiary-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 9px;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+
+}
+
+.start-eating-btn:link,
+.start-eating-btn:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.start-eating-btn:hover,
+.start-eating-btn:active {
+  background-color: #cf711e;
+}
+
+.Learn-more-btn:link,
+.Learn-more-btn:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.Learn-more-btn:hover,
+.Learn-more-btn:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.center-text {
+  text-align: center;
+}
