@@ -22,7 +22,8 @@
 
 <body>
   <header class="header">
-    <img src="./img/omnifood-logo.png" alt="omnifood-logo" class="logo">
+    <a href="#">
+      <img src="./img/omnifood-logo.png" alt="omnifood-logo" class="logo"></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li> <a class="main-nav-link" href="#">section 1</a></li>
@@ -283,8 +284,142 @@
 
       </div>
     </section>
-  </main>
+    <section class="section-pricing">
+      <div class="container">
+        <span class="subheading">pricing</span>
+        <h2 class="secondary-heading">
+          Eating well without breaking the bank
+        </h2>
+      </div>
+      <div class="container grid grid--2-cols margin-bottom-md">
+        <div class="pricing-plan pricing-plan--stater">
+          <header class="plan-header">
+            <p class="plan-name">starter</p>
+            <p class="plan-price"><span>$</span>399</p>
+            <p class="pricing-text">per month. that's just $13 per meal!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>1 meal per day
+              </span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>Order from 11am
+                and 9pm
+              </span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>Delivery is free
+              </span></li>
+            <li class="list-item"><ion-icon name="close-outline" class="list-icon"></ion-icon><span>Get access to
+                latest recipes
+              </span></li>
+          </ul>
+          <div class="paln-btn">
+            <a href="#" class="btn start-eating-btn ">start eating well</a>
+          </div>
+        </div>
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>$</span>649</p>
+            <p class="pricing-text">per month. that's just $11 per meal!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span><strong> 2
+                  meals</strong> per
+                day
+              </span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>Order
+                <strong>24/7</strong>
+              </span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>Delivery is
+                free
+              </span></li>
+            <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon><span>Get access to
+                latest recipes
+              </span></li>
+          </ul>
+          <div class="paln-btn">
+            <a href="#" class="btn start-eating-btn ">start eating well</a>
+          </div>
+        </div>
+      </div>
+      <div class="contaoner">
+        <aside class="plan-details grid">
+          Prices include all applicable taxes. Users can cancel at any time. both plans include the following:
+        </aside>
+      </div>
+      <div class="container grid grid--4-cols ">
+        <div class="feature">
+          <ion-icon name="infinite-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Never cook again!</p>
+          <p class="feature-text"> Our subscriptions cover 365 days per year, even including major holidays.</p>
+        </div>
+        <div class="feature">
+          <ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Local and organic</p>
+          <p class="feature-text"> Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon name="trash-bin-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text"> All our partners only use reusable containers to package all your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon name="pause-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Pause anytime</p>
+          <p class="feature-text"> Going on vacation? Just pause your subscription, and we refund unused days.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="secondary-heading">
+              Get your first meal for free!
+            </h2>
+            <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You
+              can
+              cancel or
+              pause anytime. And the first meal is on us!</p>
+            <form action="" class="cta-form">
+              <div>
+                <label for="Full Name">Full Name</label>
+                <input type="text" id="Full Name" placeholder="Shaik Arsalan" required>
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="me@example.com" required>
+              </div>
 
+              <div>
+                <label for="select-where">Where did you hear about us</label>
+                <select name="" id="select-where" required>
+                  <option value=""> Pleace choose one option</option>
+                  <option value="Friends and family">Friends and family</option>
+                  <option value="Youtube video">Youtube video</option>
+                  <option value="podcast">podcast</option>
+                  <option value="Facebook ad">Facebook ad</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <button class="btn btn-form">sign up now</button>
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="eating food"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container grid grid--5-cols">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img src="./img/omnifood-logo.png" alt="omnifood-logo" class="logo"></a>
+      </div>
+      <div class="address-col"></div>
+      <nav class="nav-col">nav 1</nav>
+      <nav class="nav-col">nav 2</nav>
+      <nav class="nav-col">nav 3</nav>
+    </div>
+  </footer>
 </body>
 
 </html>
