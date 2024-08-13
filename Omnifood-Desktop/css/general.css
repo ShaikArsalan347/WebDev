@@ -149,7 +149,7 @@
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(255, 170, 0, 0.5);
 }
 
 .margin-right-sm {
