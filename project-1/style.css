@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: 'rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
@@ -36,11 +36,15 @@ body {
     margin-bottom: 4.8rem
 }
 
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+}
+
 .grid-col-3 {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 4.8rem;
 }
-
 .grid-col-4 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 4.8rem;
@@ -216,7 +220,10 @@ box-shadow: inset 0 2px 4px #fff;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 11px;
     overflow: hidden;
-    transition: all 0.4s;
+    transition: all 0.5s;
+}
+.product:hover{
+    transform: translateY(-3%);
 }
 .product-img{
     width: 100%;
@@ -256,35 +263,92 @@ box-shadow: inset 0 2px 4px #fff;
 }
 .link:hover{
     color: #777;
-    border: none;
+    border: transparent;
 }
 .customer-img{
     height: 4.8rem;
     border-radius: 50%;
+    border: 2px solid #666;
 }
 .testimonials-section {
     padding: 9.6rem 0;
 }
+.headings{
+    grid-column: 1/-1;
+}
+.testimonial-heading{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 4.8rem;
+    color: #0b7285;
+    padding: 1.6rem;
+    border-bottom: 2px solid #999;
+}
 .testimonials{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    row-gap: 3.2rem;
+    column-gap: 4.8rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 .testimonial{
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    margin-left: 20px;
-    margin-bottom: 3.2rem;
     padding: 2.4rem;
     border-radius: 9px;
-    background-color: #fff;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    background-color: #f1f3f5;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.025);
+    transition: all 0.4s;
+}
+.testimonial:hover{
+transform: scale(1.04);
 }
 .testimonial-text-box{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 .customer-name{
     font-size: 1.4rem;
+}
+
+
+
+.FAQ-section{
+    padding: 9.6rem 0;
+    grid-row: 3/-1;
+    /* background-color: rgba(11, 115, 133, 0.317); */
+}
+
+.faq-heading{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.accordion{
+    padding: 3.2rem;
+}
+
+.question-box {
+    border-top: 1px solid #333;
+    padding: 1.2rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.answer-box{
+    padding: 1.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.5;
+    display: none;
+}
+.answer{
+    font-weight: 600;
+}
+.open{
+    display: block;
 }
