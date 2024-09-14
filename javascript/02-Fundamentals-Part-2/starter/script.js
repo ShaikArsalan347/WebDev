@@ -255,16 +255,22 @@
 //   console.log(arsalan[i], typeof arsalan[i]);
 // }
 ////////////// backward loop///////////////
-const arsalan = [
-  "shaik",
-  "arsalan",
-  2024 - 2008,
-  "student",
-  ["michael", "peter", "steven"],
-];
-for (let i = arsalan.length - 1; i >= 0; i--) {
-  console.log(i, arsalan[i]);
-}
+// const arsalan = [
+//   "shaik",
+//   "arsalan",
+//   2024 - 2008,
+//   "student",
+//   ["michael", "peter", "steven"],
+// ];
+// for (let i = arsalan.length - 1; i >= 0; i--) {
+//   console.log(i, arsalan[i]);
+//   // }
+//   // for (let exercise = 1; exercise < 4; exercise++) {
+//   //   console.log(`---------- starting exercise ${exercise}`);
+//   //   for (let rep = 1; rep < 6; rep++) {
+//   //     console.log(`Exercise ${exercise}: Lifing weight repetiton ${rep}`);
+//   //   }
+// }
 
 /////////// while loop////////
 // for (let rep = 1; rep <= 10; rep++) {
@@ -272,7 +278,7 @@ for (let i = arsalan.length - 1; i >= 0; i--) {
 // }
 // let rep = 1;
 // while (rep <= 10) {
-//   console.log(`WHILE:Lifting weights repetition ${rep} 🏋️`);
+//   console.log(`WHILE:Lifting weights repetition ${rep}🏋️`);
 //   rep++;
 // }
 
