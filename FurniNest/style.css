@@ -45,6 +45,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 4.8rem;
 }
+
 .grid-col-4 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 4.8rem;
@@ -62,14 +63,15 @@ a {
     background-color: #e7f5ff;
     padding: 2.4rem 0;
 }
-.nav-logo{
+
+.nav-logo {
     color: #1864ab;
     font-size: 3.2rem;
     font-weight: 600;
     cursor: pointer;
 }
 
-.main-nav-list{
+.main-nav-list {
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -81,26 +83,30 @@ a {
 .main-nav-link {
     font-size: 1.6rem;
     font-weight: 600;
-    color: #555;;
+    color: #555;
+    ;
 }
 
-.main-nav-link:hover{
+.main-nav-link:hover {
     color: #1864ab;
 }
 
-.login-btn{
+.login-btn {
     background-color: #1864ab;
     padding: 10px 30px;
     border-radius: 9px;
     color: #fff;
     transition: all 0.3s;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     background-color: transparent;
 }
-.nav-logo span{
-color: #0b7285;
+
+.nav-logo span {
+    color: #0b7285;
 }
+
 .hero-section {
     background-color: #e7f5ff;
     padding: 4.8rem 0 9.6rem 0;
@@ -131,10 +137,11 @@ color: #0b7285;
     margin-bottom: 4.8rem;
 }
 
-.btns{
+.btns {
     display: flex;
     gap: 1.5rem;
 }
+
 .btn {
     display: inline-block;
     padding: 1.6rem 3.2rem;
@@ -167,7 +174,7 @@ color: #0b7285;
     box-shadow: none;
 }
 
-.hero-img-box{
+.hero-img-box {
     border-radius: 9px;
     background-image: url('./imgs/hero.jpeg');
     background-size: cover;
@@ -177,18 +184,20 @@ color: #0b7285;
     justify-content: center;
     overflow: hidden;
 }
+
 .hero-content {
     background-color: rgba(0, 0, 0, 0.46);
     padding: 3.4rem;
     margin-bottom: 3.2rem;
 }
 
-.img-text{
+.img-text {
     font-size: 3.2rem;
     color: #fff;
     margin-bottom: 3.2rem;
 }
-.shop-btn{
+
+.shop-btn {
     display: inline-block;
     padding: 20px 40px;
     background-color: #fff;
@@ -198,85 +207,103 @@ color: #0b7285;
     font-size: 1.6rem;
     transition: background-color 0.3s ease;
 }
-.shop-btn:hover{
-background-color: transparent;
-color: #fff;
-box-shadow: inset 0 2px 4px #fff;
+
+.shop-btn:hover {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: inset 0 2px 4px #fff;
 }
-.products-section{
+
+.products-section {
     padding: 9.6rem 0;
 }
 
-.secondary-heading{
+.secondary-heading {
     font-size: 3.2rem;
     text-align: center;
-    margin-bottom:8rem;
+    margin-bottom: 8rem;
     color: #0b7285;
     padding: 1.6rem;
     border-bottom: 2px solid #999;
 }
-.product{
+
+.product {
     background-color: #fff;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.5s;
 }
-.product:hover{
+
+.product:hover {
     transform: translateY(-3%);
 }
-.product-img{
+
+.product-img {
     width: 100%;
 }
-.product-details{
+
+.product-details {
     padding: 3.2rem;
 }
-.product-title{
+
+.product-title {
     font-size: 1.6rem;
     margin-bottom: 3.2rem;
     line-height: 1.5;
 }
-.product-info{
+
+.product-info {
     display: flex;
     justify-content: space-between;
 }
-.product-price{
+
+.product-price {
     font-size: 2.4rem;
 }
-.View-details-btn{
+
+.View-details-btn {
     font-size: 1.2rem;
     text-decoration: underline;
 }
-.View-details-btn:hover{
+
+.View-details-btn:hover {
     color: #999;
 }
-.all-products{
-    grid-column:1/-1 ;
+
+.all-products {
+    grid-column: 1/-1;
     justify-self: center;
 }
-.link{
+
+.link {
     display: inline-block;
     border-bottom: 1px solid currentColor;
     padding-bottom: 3px;
     font-size: 1.6rem;
     transition: all 0.3s;
 }
-.link:hover{
+
+.link:hover {
     color: #777;
     border: transparent;
 }
-.customer-img{
+
+.customer-img {
     height: 4.8rem;
     border-radius: 50%;
     border: 2px solid #666;
 }
+
 .testimonials-section {
     padding: 9.6rem 0;
 }
-.headings{
+
+.headings {
     grid-column: 1/-1;
 }
-.testimonial-heading{
+
+.testimonial-heading {
     font-size: 3.2rem;
     text-align: center;
     margin-bottom: 4.8rem;
@@ -284,15 +311,17 @@ box-shadow: inset 0 2px 4px #fff;
     padding: 1.6rem;
     border-bottom: 2px solid #999;
 }
-.testimonials{
+
+.testimonials {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 3.2rem;
     column-gap: 4.8rem;
     grid-column: 1/4;
     grid-row: 1/2;
 }
-.testimonial{
+
+.testimonial {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
@@ -302,30 +331,34 @@ box-shadow: inset 0 2px 4px #fff;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.025);
     transition: all 0.4s;
 }
-.testimonial:hover{
-transform: scale(1.04);
+
+.testimonial:hover {
+    transform: scale(1.04);
 }
-.testimonial-text-box{
+
+.testimonial-text-box {
     font-size: 1.8rem;
     line-height: 1.5;
 }
-.customer-name{
+
+.customer-name {
     font-size: 1.4rem;
 }
 
 
 
-.FAQ-section{
+.FAQ-section {
     padding: 9.6rem 0;
     grid-row: 3/-1;
     /* background-color: rgba(11, 115, 133, 0.317); */
 }
 
-.faq-heading{
+.faq-heading {
     font-size: 3.2rem;
     text-align: center;
 }
-.accordion{
+
+.accordion {
     padding: 3.2rem;
 }
 
@@ -339,16 +372,25 @@ transform: scale(1.04);
     align-items: center;
     justify-content: space-between;
 }
-.answer-box{
+
+.answer-box {
     padding: 1.2rem;
     font-size: 2.4rem;
     margin-bottom: 2.4rem;
     line-height: 1.5;
     display: none;
 }
-.answer{
+
+.answer {
     font-weight: 600;
 }
-.open{
+
+.openBtn {
+    border: transparent;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.show {
     display: block;
 }
