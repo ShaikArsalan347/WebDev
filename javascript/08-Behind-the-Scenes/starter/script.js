@@ -65,30 +65,46 @@
 
 // console.log({ keys });
 // console.log(ayaz["Dob"]);
-console.log(this);
+// console.log(this);
 
-const calcAge = function (birthYear) {
-  console.log(2024 - birthYear);
-  console.log(this);
-};
-calcAge(2008);
+// const calcAge = function (birthYear) {
+//   console.log(2024 - birthYear);
+//   console.log(this);
+// };
+// calcAge(2008);
 
-const calcAgeArrow = (birthYear) => {
-  console.log(2024 - birthYear);
-  console.log(this);
-};
-calcAgeArrow(2010);
+// const calcAgeArrow = (birthYear) => {
+//   console.log(2024 - birthYear);
+//   console.log(this);
+// };
+// calcAgeArrow(2010);
+// const arsalan = {
+//   year: 2008,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2024 - this.year);
+//   },
+// };
+// arsalan.calcAge();
+// const ayaz = {
+//   year: 2010,
+// };
+
+// ayaz.calcAge = arsalan.calcAge;
+// ayaz.calcAge();
+// const f = arsalan.calcAge;
+// f();
+
 const arsalan = {
+  firstName: "shaik",
   year: 2008,
   calcAge: function () {
     console.log(this);
     console.log(2024 - this.year);
   },
+  great: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
 };
-arsalan.calcAge();
-const ayaz = {
-  year: 2010,
-};
-
-ayaz.calcAge = arsalan.calcAge;
-ayaz.calcAge();
+arsalan.great();
