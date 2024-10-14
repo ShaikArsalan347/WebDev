@@ -95,16 +95,59 @@
 // const f = arsalan.calcAge;
 // f();
 
-const arsalan = {
-  firstName: "shaik",
-  year: 2008,
-  calcAge: function () {
-    console.log(this);
-    console.log(2024 - this.year);
-  },
-  great: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
-};
-arsalan.great();
+// const arsalan = {
+//   firstName: "shaik",
+//   year: 2008,
+//   calcAge: function () {
+//     // console.log(this);
+//     console.log(2024 - this.year);
+
+// Solution 1
+// const self = this; // self or that
+// const isMillenial = function () {
+//   console.log(self);
+//   console.log(self.year >= 1981 && self.year <= 1996);
+// };
+// isMillenial();
+// Solution 2
+//     const isMillenial = () => {
+//       console.log(this);
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//   },
+
+//   greet: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+// arsalan.greet();
+// arsalan.calcAge();
+// const addExpr = function (a, b) {
+//   console.log(arguments);
+
+//   return a + b;
+// };
+// addExpr(2, 5);
+// addExpr(22, 36, 55, 6);
+// const addArrow = (a, b) => {
+//   console.log(arguments);
+
+//   return a + b;
+// };
+// addArrow(3, 4);
+
+// let age = 14;
+// let oldAge = age;
+// age = 16;
+// console.log(age);
+// console.log(oldAge);
+// const me = {
+//   Name: "arsalan",
+//   age: 30,
+// };
+// const friend = me;
+// friend.age = 27;
+// console.log("friend", friend);
+// console.log("me", me);
