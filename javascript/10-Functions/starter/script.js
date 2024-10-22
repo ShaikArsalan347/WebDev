@@ -169,3 +169,49 @@ const poll = {
     console.log(answers);
   },
 };
+//////////// closures/////////////
+const secureBooking = function () {
+  let pasengercount = 0;
+  return function () {
+    pasengercount++;
+    console.log(`${pasengercount} pasengers`);
+  };
+};
+const booker = secureBooking();
+booker();
+booker();
+booker();
+console.dir(booker);
+let f;
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 3);
+  };
+};
+const h = function () {
+  const b = 777;
+  f = function () {
+    console.log(b * 3);
+  };
+};
+g();
+f();
+h();
+f();
+const boardPassengers = function (n, wait) {
+  const perGroup = n / 3;
+  setTimeout(function () {
+    console.log(`We are now boarding all ${n} passengers`);
+    console.log(`There are 3 group, each with ${perGroup} passengers`);
+  }, wait * 1000);
+  console.log(`Will start boardingin ${wait} seconds`);
+};
+boardPassengers(180, 3);
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+  document.querySelector("body").addEventListener("click", function () {
+    header.style.color = "blue";
+  });
+})();
