@@ -39,7 +39,7 @@ const account5 = {
   pin: 5555,
 };
 
-const accounts = [account1, account2, account3, account4];
+const accounts = [account1, account2, account3, account4, account5];
 
 // Elements
 const labelWelcome = document.querySelector(".welcome");
@@ -54,6 +54,9 @@ const containerApp = document.querySelector(".app");
 const showAppcontainer = document.querySelector(".show-app");
 const hideLoginForm = document.querySelector(".hidden");
 const containerMovements = document.querySelector(".movements");
+const overlay = document.querySelector(".overlay");
+const showError = document.querySelector(".modal");
+const closeModel = document.querySelector(".close-modal");
 
 const btnLogin = document.querySelector(".login__btn");
 const btnTransfer = document.querySelector(".form__btn--transfer");
@@ -63,8 +66,8 @@ const btnSort = document.querySelector(".btn--sort");
 
 const inputLoginUsername = document.querySelector(".login__input--user");
 const inputLoginPin = document.querySelector(".login__input--pin");
-const inputTransferTo = document.querySelector(".form__input--to");
-const inputTransferAmount = document.querySelector(".form__input--amount");
+let inputTransferTo = document.querySelector(".form__input--to");
+let inputTransferAmount = document.querySelector(".form__input--amount");
 const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
@@ -83,24 +86,25 @@ const displayMovements = function (movements) {
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
 };
-const clacDisplayBlance = function (movements) {
-  const balance = movements.reduce((acc, mov) => acc + mov, 0);
-  labelBalance.textContent = `${balance}€`;
+const clacDisplayBlance = function (account) {
+  account.balance = account.movements.reduce((acc, mov) => acc + mov, 0);
+
+  labelBalance.textContent = `${account.balance}€`;
 };
 
-const clacDisplaySummary = function (movements) {
-  const incomes = movements
+const clacDisplaySummary = function (account) {
+  const incomes = account.movements
     .filter((mov) => mov > 0)
     .reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${incomes}€`;
 
-  const out = movements
+  const out = account.movements
     .filter((mov) => mov < 0)
     .reduce((acc, mov) => acc + mov, 0);
   labelSumOut.textContent = `${Math.abs(out)}€`;
-  const interest = movements
+  const interest = account.movements
     .filter((mov) => mov > 0)
-    .map((deposit) => (deposit * 1.2) / 100)
+    .map((deposit) => (deposit * account.interestRate) / 100)
     .filter((int) => int >= 1)
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}€`;
@@ -112,12 +116,17 @@ const createUsernames = function (accs) {
       .toLowerCase()
       .replace("_", "")
       .split(" ")
-      .map((name) => name[0])
+      // .map((name) => name[0])
       .join("");
   });
 };
 
 createUsernames(accounts);
+const updateUI = function (account) {
+  displayMovements(account.movements);
+  clacDisplayBlance(account);
+  clacDisplaySummary(account);
+};
 
 let currentAccount;
 btnLogin.addEventListener("click", function (e) {
@@ -125,21 +134,55 @@ btnLogin.addEventListener("click", function (e) {
   currentAccount = accounts.find(
     (acc) => acc.username === inputLoginUsername.value
   );
-  console.log(currentAccount);
-  if (currentAccount?.pin === Number(inputLoginPin.value)) {
-    console.log("Login");
+  // if (currentAccount?.pin === Number(inputLoginPin.value)) {
+  //   console.log("Login");
+  // }
+  if (
+    currentAccount?.username === inputLoginUsername.value &&
+    currentAccount?.pin === Number(inputLoginPin.value) /// correct after pjct
+  ) {
+    showAppcontainer.style.display = "grid";
+    hideLoginForm.style.display = "none";
+  } else {
+    /////////// TO ADD MODEL
+    showError.style.display = "block";
+    overlay.style.display = "block";
   }
-
+  overlay.addEventListener("click", closeModel);
   labelWelcome.textContent = `Welcome back,${
     currentAccount.owner.split(" ")[1]
   }`;
-  showAppcontainer.style.display = "grid";
-  hideLoginForm.style.display = "none";
-  displayMovements(currentAccount.movements);
-  clacDisplayBlance(currentAccount.movements);
-  clacDisplaySummary(currentAccount.movements);
+  updateUI(currentAccount);
+});
+///// TO CLOSE MODEL /////////
+closeModel.addEventListener("click", function () {
+  showError.style.display = "none";
+  overlay.style.display = "none";
+});
+overlay.addEventListener("click", function () {
+  showError.style.display = "none";
+  overlay.style.display = "none";
 });
 
+/////////// transfer money////////////////
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+  let amount = Number(inputTransferAmount.value);
+  let receiverAcc = accounts.find(
+    (acc) => acc.username === inputTransferTo.value
+  );
+  // inputTransferAmount.value = inputTransferTo = " ";
+  if (
+    amount > 0 &&
+    receiverAcc &&
+    currentAccount.balance >= amount &&
+    receiverAcc?.username !== currentAccount.username
+  ) {
+    currentAccount.movements.push(-amount);
+    receiverAcc.movements.push(amount);
+    updateUI(currentAccount);
+  }
+});
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
