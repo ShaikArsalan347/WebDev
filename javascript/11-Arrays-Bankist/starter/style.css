@@ -201,6 +201,7 @@ body {
   align-items: baseline;
   padding: 0 0.3rem;
   margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .summary__label {

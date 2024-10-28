@@ -72,10 +72,12 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
-const displayMovements = function (movements) {
-  // containerMovements.innerHTML = "";
+const displayMovements = function (movements, sort = false) {
+  containerMovements.innerHTML = "";
 
-  movements.forEach(function (mov, i) {
+  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+
+  movs.forEach(function (mov, i) {
     const type = mov > 0 ? "deposit" : "withdrawal";
     const html = `<div class="movements__row">
         <div class="movements__type movements__type--${type}">
@@ -116,7 +118,7 @@ const createUsernames = function (accs) {
       .toLowerCase()
       .replace("_", "")
       .split(" ")
-      // .map((name) => name[0])
+      .map((name) => name[0])
       .join("");
   });
 };
@@ -150,7 +152,7 @@ btnLogin.addEventListener("click", function (e) {
   }
   overlay.addEventListener("click", closeModel);
   labelWelcome.textContent = `Welcome back,${
-    currentAccount.owner.split(" ")[1]
+    currentAccount?.owner.split(" ")[1]
   }`;
   updateUI(currentAccount);
 });
@@ -171,7 +173,7 @@ btnTransfer.addEventListener("click", function (e) {
   let receiverAcc = accounts.find(
     (acc) => acc.username === inputTransferTo.value
   );
-  // inputTransferAmount.value = inputTransferTo = " ";
+  inputTransferAmount.value = inputTransferTo.value = "";
   if (
     amount > 0 &&
     receiverAcc &&
@@ -183,6 +185,43 @@ btnTransfer.addEventListener("click", function (e) {
     updateUI(currentAccount);
   }
 });
+btnLoan.addEventListener("click", function (e) {
+  e.preventDefault();
+  const amount = Number(inputLoanAmount.value);
+  if (
+    amount > 0 &&
+    currentAccount.movements.some((mov) => mov >= amount * 0.1)
+  ) {
+    currentAccount.movements.push(amount);
+    updateUI(currentAccount);
+  }
+  inputLoanAmount.value = "";
+});
+
+btnClose.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      (acc) => acc.username === currentAccount.username
+    );
+    console.log(index);
+    accounts.splice(index, 1);
+
+    showAppcontainer.style.display = "none";
+    hideLoginForm.style.display = "flex";
+  }
+  inputCloseUsername.value = inputClosePin.value = "";
+});
+let sorted = false;
+btnSort.addEventListener("click", function (e) {
+  e.preventDefault();
+  displayMovements(currentAccount.movements, !sorted);
+  sorted = !sorted;
+});
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -336,3 +375,34 @@ console.log(avg1, avg2);
 //   if (account.pin === 1111) console.log(account);
 // }
 // console.log(account);
+// ////////////some /////////////////
+const anydeposits = movements.some((mov) => mov > 0);
+console.log(anydeposits);
+//// every
+console.log(movements.every((mov) => mov > 0));
+/// flat ///////////////
+const overalbalance = accounts
+  .map((acc) => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalbalance);
+//////// flatmap //////////
+const overalbalance2 = accounts
+  .flatMap((acc) => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalbalance2);
+///////// SORT////////////
+////////ascending
+// movements.sort((a, b) => {
+//   if (a > b) return 1;
+//   if (a < b) return -1;
+// });
+movements.sort((a, b) => a - b);
+console.log(movements);
+/////// descending
+// movements.sort((a, b) => {
+//   if (a < b) return 1;
+//   if (a > b) return -1;
+// });
+movements.sort((a, b) => b - a);
+console.log(movements);
