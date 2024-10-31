@@ -12,34 +12,40 @@ const account1 = {
   pin: 1111,
 };
 const account2 = {
-  owner: "Jonas Schmedtmann",
+  owner: "Shaik Ayub",
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
   interestRate: 1.2, // %
   pin: 2222,
 };
 
 const account3 = {
-  owner: "Jessica Davis",
+  owner: "Shaik Ayaz",
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
   interestRate: 1.5,
   pin: 3333,
 };
 
 const account4 = {
-  owner: "Steven Thomas Williams",
+  owner: "Shaik Azra",
   movements: [200, -200, 340, -300, -20, 50, 400, -460],
   interestRate: 0.7,
   pin: 4444,
 };
 
 const account5 = {
-  owner: "Sarah Smith",
+  owner: "saad",
   movements: [430, 1000, 700, 50, 90],
   interestRate: 1,
   pin: 5555,
 };
+const account6 = {
+  owner: "umme hani",
+  movements: [430, 1000, 700, 50, 90],
+  interestRate: 1,
+  pin: 6666,
+};
 
-const accounts = [account1, account2, account3, account4, account5];
+const accounts = [account1, account2, account3, account4, account5, account6];
 
 // Elements
 const labelWelcome = document.querySelector(".welcome");
@@ -114,15 +120,13 @@ const clacDisplaySummary = function (account) {
 
 const createUsernames = function (accs) {
   accs.forEach(function (acc) {
-    acc.username = acc.owner
-      .toLowerCase()
-      .replace("_", "")
-      .split(" ")
-      .map((name) => name[0])
-      .join("");
+    acc.username = acc.owner.toLowerCase().replace("_", "");
+    // .split(" ")
+    // .map((name) => name[0])
+    // .join("");
   });
+  // console.log(username);
 };
-
 createUsernames(accounts);
 const updateUI = function (account) {
   displayMovements(account.movements);
@@ -423,3 +427,10 @@ const z = Array.from({ length: 7 }, (_, i) => i + 1);
 console.log(z);
 const diceroll = Array.from({ length: 100 }, (_, i) => i + 1);
 console.log(diceroll);
+labelBalance.addEventListener("click", function () {
+  const movementsUI = Array.from(
+    document.querySelectorAll(".movements__value"),
+    (el) => Number(el.textContent.replace("€", ""))
+  );
+  console.log(movementsUI);
+});
