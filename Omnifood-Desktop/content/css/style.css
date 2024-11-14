@@ -297,14 +297,25 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 25px 0 0 0;
-  animation: moveLeft 15s linear infinite;
+  cursor: pointer;
+  animation: moveLeft 25s linear infinite;
 }
+
 
 .logos img {
   height: 3.4rem;
+  /* width: 15rem; */
   filter: brightness(0);
   opacity: 0.5;
+  /* animation: moveLeft 15s linear infinite; */
 }
+
+/* .logos img:hover {
+  /* z-index: 9999; */
+/* display: none; */
+/* animation: none 0s linear; */
+/* transition: all 50s; */
+/* } */
 
 /* ******************* */
 /* meals seaction*/
