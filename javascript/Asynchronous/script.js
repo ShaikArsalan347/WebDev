@@ -46,4 +46,3 @@ const getCountryAndNeighbour = function (country) {
   });
 };
 getCountryAndNeighbour("india");
-getCountryAndNeighbour("de");
